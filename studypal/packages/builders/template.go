@@ -4,7 +4,7 @@ import "studypal/packages/helpers/typography"
 
 func GetTemplateSelect(name string, firstTable, secondTable *string) string {
 	if name == "content_info" {
-		return *firstTable + "_slug," + *firstTable + "_title,"
+		return *firstTable + "_slug," + *firstTable + "_name," + *firstTable + "_desc"
 	} else if name == "properties" {
 		return "created_at, updated_at"
 	}
